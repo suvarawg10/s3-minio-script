@@ -1,14 +1,12 @@
 #!/bin/bash
 
 export MC_MAX_RETRIES=100
+#path of script
 SCRIPT_DIR="/root/bucket-data-migration"
 
-#BUCKET NAME="getitnow-prod squarenow-production pookadai-production paisanow-production"
+#BUCKET NAME="bucket1 bucket2 bucket3"
 
-#SYNC_FOLDER="squarenow-production"
-#SYNC_FOLDER="pookadai-production"
-#SYNC_FOLDER="paisanow-production"
-#SYNC_FOLDER="getitnow-prod"
+#SYNC_FOLDER="bucket1"
 
 SYNC_FOLDER=$1
 SYNC_FOLDER_LOG=$(echo $SYNC_FOLDER | sed 's/\//_/g')
