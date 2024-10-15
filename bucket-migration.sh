@@ -3,12 +3,8 @@
 export MC_MAX_RETRIES=100
 SCRIPT_DIR=`pwd`
 
-#BUCKET NAME="getitnow-prod squarenow-production pookadai-production paisanow-production"
-
-#SYNC_FOLDER="squarenow-production"
-#SYNC_FOLDER="pookadai-production"
-#SYNC_FOLDER="paisanow-production"
-SYNC_FOLDER="getitnow-prod"
+#BUCKET NAME="bucket1 bucket2 bucket3"
+SYNC_FOLDER="bucket1"
 
 SRC_PATH="s3-bucket/${SYNC_FOLDER}"
 DEST_PATH="ecos-bucket/8485-${SYNC_FOLDER}"
