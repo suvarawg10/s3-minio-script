@@ -20,8 +20,8 @@ while IFS=' ' read -r path size; do
     dir_path=$(dirname "$path")
     
     # Perform the mirror operation
-    echo "Mirroring s3-bucket/getitnow-prod/$dir_path to ecos-bucket/8485-getitnow-prod/$dir_path"
-    mc mirror s3-bucket/getitnow-prod/"$dir_path" ecos-bucket/8485-getitnow-prod/"$dir_path"
+    echo "Mirroring source to destionation"
+    mc mirror s3-bucket/src-bucket/"$dir_path" minio-bucket/dest-bucket/"$dir_path"
 
     # Check if the mirror operation was successful
     if [ $? -eq 0 ]; then
